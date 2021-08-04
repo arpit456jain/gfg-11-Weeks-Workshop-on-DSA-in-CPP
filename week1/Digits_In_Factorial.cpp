@@ -9,16 +9,7 @@ using namespace std;
 class Solution
 {
 public:
-    long long Factorial(long long N)
-    {
-        // T.C : O(n)
-        long long ans = 1;
-        for (long long i = 1; i <= N; i++)
-        {
-            ans = ans * i;
-        }
-        return ans;
-    }
+
 
     int digitsInFactorial(int n)
     {
