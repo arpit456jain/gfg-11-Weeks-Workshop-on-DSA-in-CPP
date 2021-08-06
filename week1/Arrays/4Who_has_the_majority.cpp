@@ -1,14 +1,9 @@
-// { Driver Code Starts
-//Initial Template for C
-
+/*
+Given an array arr[] of size N and two elements x and y, use counter variables to find which element appears most in the array, x or y. If both elements have the same frequency, then return the smaller element.
+Note:  We need to return the element, not its count.
+*/
 #include <stdio.h>
 
-
- // } Driver Code Ends
-//User function Template for C
-
-// Function to find element with more appearances between two elements in an
-// array.
 int majorityWins(int arr[], int n, int x, int y) {
  
     // code here
