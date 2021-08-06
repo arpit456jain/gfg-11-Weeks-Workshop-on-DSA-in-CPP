@@ -1,5 +1,4 @@
-// { Driver Code Starts
-//Initial template for C++
+// Given an array arr[] of positive integers of size N. Reverse every sub-array group of size K.
 
 #include <bits/stdc++.h>
 using namespace std;
