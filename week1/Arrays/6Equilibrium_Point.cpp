@@ -16,7 +16,7 @@ class Solution{
         sum1 += a[i];
         cout <<"sum is"<<sum1<<endl;
 
-        //now logic is to iterate over array and substrate point and add it yto left 
+        //now logic is to iterate over array and substract point and add it to left 
         long long left = 0;
         long long current = 0;
         long long right = sum1;
