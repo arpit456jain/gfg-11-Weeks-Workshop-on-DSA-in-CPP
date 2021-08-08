@@ -1,6 +1,4 @@
-// { Driver Code Starts
-//Initial Template for C++
-
+// Given two integers ‘a’ and ‘m’. The task is to find the smallest modular multiplicative inverse of ‘a’ under modulo ‘m’.
 #include<iostream>
 using namespace std;
 

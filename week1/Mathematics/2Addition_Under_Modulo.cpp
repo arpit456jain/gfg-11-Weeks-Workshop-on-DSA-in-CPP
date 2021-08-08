@@ -1,6 +1,4 @@
-// { Driver Code Starts
-//Initial Template for C++
-
+// Given two numbers a and b, find the sum of a and b. Since the sum can be very large, find the sum modulo 109+7.
 #include <bits/stdc++.h>
 using namespace std;
 
