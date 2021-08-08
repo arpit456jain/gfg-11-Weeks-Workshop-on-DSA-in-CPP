@@ -19,7 +19,7 @@
 # Fortran module files
 *.mod
 *.smod
-
+*tempCodeRunnerFile.cpp
 # Compiled Static libraries
 *.lai
 *.la
