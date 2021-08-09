@@ -6,8 +6,8 @@
 // Explanation: First group consists of elements
 // 1, 2, 3. Second group consists of 4,5.
 #include <bits/stdc++.h>
-using namespace std;
 #include <algorithm>
+using namespace std;
 
  // } Driver Code Ends
 //User function template for C++
@@ -21,7 +21,6 @@ public:
         if(k>=n)
         {
             int left = 0;
-            // to handle case when k is not multiple of n
             int right = n-1;
 
             // reverseArray(arr,left,right);

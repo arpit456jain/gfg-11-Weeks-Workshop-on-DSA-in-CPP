@@ -4,7 +4,7 @@
 // arr[] = {4 67 13 12 15}
 // X = 16
 // Output: 15
-// Explanation: For a given value 16, there
+// Explanation For a given value 16, there
 // are four values which are smaller than
 // it. But 15 is the number which is smaller
 // and closest to it with minimum difference
