@@ -1,5 +1,10 @@
 // A prime number is a number which is only divisible by 1 and itself.
 // Given number N check if it is prime or not.
+// Input:
+// N = 5
+// Output: Yes
+// Explanation: 5 is only divisible by 1 
+// and itself. So, 5 is a prime number.
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -42,3 +47,6 @@ int main()
     return 0;
 }
   // } Driver Code Ends
+// Testcase
+// 1
+// 5

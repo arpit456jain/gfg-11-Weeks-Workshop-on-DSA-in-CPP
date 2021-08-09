@@ -1,4 +1,9 @@
 // Given a positive integer value N. The task is to find how many numbers less than or equal to N have numbers of divisors exactly equal to 3.
+// Input:
+// N = 6
+// Output: 1
+// Explanation: The only number less than 6 with 
+// 3 divisors is 4.
 #include <bits/stdc++.h>
 using namespace std;
 

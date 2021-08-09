@@ -1,5 +1,9 @@
 // Given an integer N. Find the number of digits that appear in its factorial.
 // Factorial is defined as, factorial(n) = 1*2*3*4……..*N and factorial(0) = 1.
+// Input: N = 5
+// Output: 3
+// Explanation: Factorial of 5 is 120.
+// Number of digits in 120 is 3 (1, 2, and 0)
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -50,3 +54,6 @@ int main()
     return 0;
 }
 // } Driver Code Ends
+// Testcases
+// 1
+// 5

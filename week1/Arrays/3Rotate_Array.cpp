@@ -1,17 +1,19 @@
-// { Driver Code Starts
+/*
+Given an unsorted array arr[] of size N, rotate it by D elements in the counter-clockwise direction. 
+Input:
+N = 5, D = 2
+arr[] = {1,2,3,4,5}
+Output: 3 4 5 1 2
+Explanation: 1 2 3 4 5  when rotated
+by 2 elements, it becomes 3 4 5 1 2.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
-
- // } Driver Code Ends
-
 class Solution{
     public:
-    
-    //Function to rotate an array by d elements in counter-clockwise direction. 
-    void rotateArr(int arr[], int d, int n){
-        // code here
 
+    void rotateArrUsingExtraSpace(int arr[], int d, int n){
         // logic is i will copy first d elements into another array and then i will shift elements by  d postions and then i will insert those elements in reverse order
         int temp[d];
         // copy the first d elements into the second array and then reverse it
@@ -33,6 +35,26 @@ class Solution{
             arr[i] = temp[j];
             j++;
         }
+    }
+    void rotateArrWithOutUsingExtraSpace(int arr[], int d, int n){
+        // logic is to rotate array by one  postion d times
+        for(int i=0; i<d; i++)
+        {
+            // rotate array by one postion 
+            int temp = arr[0];
+            for(int j=1; j<n; j++)
+            {
+                arr[j-1] = arr[j];
+            }
+            arr[n-1] = temp;
+        }
+    }
+    //Function to rotate an array by d elements in counter-clockwise direction. 
+    void rotateArr(int arr[], int d, int n){
+        // code here
+        // rotateArrUsingExtraSpace(arr,d,n); // T.C : O(n) 
+        rotateArrWithOutUsingExtraSpace(arr,d,n);
+        
     }
 };
 
@@ -68,3 +90,12 @@ int main() {
 	}
 	return 0;
 }  // } Driver Code Ends
+
+/*
+Testcase
+1
+5 2
+1 2 3 4 5 
+
+Output : 3 4 5 1 2 
+*/

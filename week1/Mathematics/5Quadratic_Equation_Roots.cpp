@@ -1,5 +1,14 @@
 // Given a quadratic equation in the form ax2 + bx + c. Find its roots.
 // Note: Return the maximum root followed by the minimum root.
+/*
+Input:
+a = 1
+b = -2
+c = 1
+Output: 1 1
+Explanation:
+Roots of equation x2-2x+1 are 1 and 1.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -60,3 +69,9 @@ int main() {
     }
     return 0;
 }  // } Driver Code Ends
+
+// Testcases
+/*
+1
+1 -2 1
+*/
