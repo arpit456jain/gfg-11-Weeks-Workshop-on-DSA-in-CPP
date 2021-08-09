@@ -1,7 +1,14 @@
 // Given an array arr[] of size N containing positive integers and an integer X, find the element in the array which is smaller than X and closest to it.
-
-// { Driver Code Starts
-//Initial Template for C++
+// Input:
+// N = 5
+// arr[] = {4 67 13 12 15}
+// X = 16
+// Output: 15
+// Explanation: For a given value 16, there
+// are four values which are smaller than
+// it. But 15 is the number which is smaller
+// and closest to it with minimum difference
+// of 1.
 #include <bits/stdc++.h>
 using namespace std;
 

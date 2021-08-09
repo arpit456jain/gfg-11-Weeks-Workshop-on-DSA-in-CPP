@@ -1,6 +1,14 @@
 /*
 Given an array arr[] of size N and two elements x and y, use counter variables to find which element appears most in the array, x or y. If both elements have the same frequency, then return the smaller element.
 Note:  We need to return the element, not its count.
+Input:
+N = 11
+arr[] = {1,1,2,2,3,3,4,4,4,4,5}
+x = 4, y = 5
+Output: 4
+Explanation: 
+frequency of 4 is 4.
+frequency of 5 is 1.
 */
 #include <stdio.h>
 
