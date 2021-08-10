@@ -18,6 +18,32 @@
 | Exactly 3 Divisors| [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Mathematics/9Exactly3_Divisors.cpp) |
 | Modular Multiplicative Inverse| [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Mathematics/10Modular_Multiplicative_Inverse.cpp) |
 
+### Arrays
+| Problem | Solutions |
+|---|---|
+| Remove duplicate elements from sorted Array | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/1Remove_duplicate_elements_from_sorted_Array.cpp) |
+| Reverse Array | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/Reverse_array.cpp) |
+| Reverse array in groups | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/2Reverse_array_in_groups.cpp) |
+| Rotate Array without using extraSpace | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/Rotate_Array_without_using_extraSpace.cpp) |
+| Wave Array | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/8Wave_Array.cpp) |
+| Rotate Array | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/3Rotate_Array.cpp) |
+| Who has the majority? | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/4Who_has_the_majority.cpp) |
+| Find Transition Point | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/5Find_Transition_Point.cpp) |
+| Equilibrium Point | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/6Equilibrium_Point.cpp) |
+| Leaders in an array | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/7Leaders_in_an_array.cpp) |
+| Subarray with given sum | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/9Subarray_with_given_sum.cpp) |
+| First Repeating Element | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/10First_Repeating_Element.cpp) |
+| Find Immediate Smaller Than X | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/11Find_Immediate_Smaller_ThanX.cpp) |
+|| [solution]() |
+|| [solution]() |
+|| [solution]() |
+| Square Root | [solution](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-CPP/blob/master/week1/Arrays/square_root.cpp) |
+|| [solution]() |
+|| [solution]() |
+|| [solution]() |
+|| [solution]() |
+|| [solution]() |
+|| [solution]() |
 
 
 <br><br>
