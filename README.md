@@ -48,7 +48,7 @@ A Comprehensive DSA Workshop Learn Data Structures and Algorithms in-depth in ju
 
 
 <br><br>
-### GFG-11-Weeks-Workshop-on-Data-Structures-and-Algorithms in [Python](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-Data-Structures-and-Algorithms)
+### GFG-11-Weeks-Workshop-on-Data-Structures-and-Algorithms in [Python](https://github.com/arpit456jain/gfg-11-Weeks-Workshop-on-DSA-in-Python)
 ### Need help in [DSA-Path-And-Important-Questions](https://github.com/arpit456jain/DSA-Path-And-Important-Questions)
 
 Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height=25px width=25px> to this repo and Repos mentioned above
