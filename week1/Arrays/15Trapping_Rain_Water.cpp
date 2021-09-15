@@ -62,7 +62,7 @@ class Solution{
 
     int trappingWater(int arr[], int n){
         // Code here
-        int ans = naiveApproch(arr,n); // T.C : O(n*n)
+        int ans = naiveApproch(arr,n); // T.C : O(n*n) gives TLE
         return ans;
     }
 };
