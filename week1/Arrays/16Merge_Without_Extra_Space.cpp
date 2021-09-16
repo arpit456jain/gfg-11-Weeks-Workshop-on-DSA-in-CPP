@@ -92,6 +92,7 @@ class Solution{
             // code here 
             // naiveApproch(arr1, arr2, n, m); // giving TLE
             optimizeApproch(arr1, arr2, n, m);
+            // The time complexity while traversing the arrays in while loop is O(n+m) in worst case and sorting is O(nlog(n) + mlog(m)). So overall time complexity of the code becomes O((n+m)log(n+m)).
         } 
 };
 
