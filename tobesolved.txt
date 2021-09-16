@@ -4,4 +4,3 @@
 4.Seive of Eratosthnes
 5.Prefix Sum
 6.calculate the maximum sum of 'k' by sliding window tech
-7. Learn Section of Array
