@@ -25,45 +25,73 @@ class Solution{
     public:
         void naiveApproch(long long arr1[], long long arr2[], int n, int m) 
         {
-            int temp[m+n];
-            int i=0;
+            // int i=0;
             int j=0;
-            int k=0;
-            while(i<n && j>m)
+            int flag=0;
+            while(j<m)
+            {
+            
+                for(int i=0; i<n; i++)
+                {
+                    if(arr2[j]<arr1[i])
+                    {
+                        //swap both of them
+                        long long int tmp = arr2[j];
+                        arr2[j] = arr1[i];
+                        arr1[i] = tmp;
+                        flag = 1;
+                        break;
+                    }
+                    else
+                    {
+                        flag = 0;
+                    }
+                }
+                if(flag == 0)
+                {
+                    // it means that no swapping occurs so just increase the j pointer
+                    j++;
+                }
+            }
+            // now first array is sortred so just sort the 2nd array
+            sort(arr2,arr2+m);
+        }
+        void optimizeApproch(long long arr1[], long long arr2[], int n, int m) 
+        {
+            // 1) Initialize i,j,k as 0,0,n-1 where n is size of arr1 
+            // 2) Iterate through every element of arr1 and arr2 using two pointers i and j respectively
+            //     if arr1[i] is less than arr2[j]
+            //         increment i
+            //     else
+            //         swap the arr2[j] and arr1[k]
+            //         increment j and decrement k
+
+            // 3) Sort both arr1 and arr2 
+            int i=0, j=0;
+            int k=n-1;
+            while (j<m && i<=k)
             {
                 if(arr1[i]<arr2[j])
+                i++;
+                else
                 {
-                temp[k++] = arr1[i++];
+                    // swap last element of arr1 and current element of arr2
+                    long long int temp = arr1[k];
+                    arr1[k] = arr2[j];
+                    arr2[j] = temp;
+                    j++;
+                    k--;
                 }
-                if(arr1[i]>arr2[j])
-                {
-                    temp[k++] = arr2[j++];
-                }
-                if(arr1[i]==arr2[j])
-                {
-                    temp[k++] = arr1[i++];
-                    temp[k++] = arr2[j++];
-                    
-                }
-                
             }
-
-
-            //copy array from temp to original ones
-            for(int i=0; i<n; i++)
-            {
-                arr1[i]=temp[i];
-            }
-            for(int i=n; i<m; i++)
-            {
-                arr2[i]=temp[i];
-            }
+            sort(arr1,arr1+n);
+            sort(arr2,arr2+m);
         }
         //Function to merge the arrays.
         void merge(long long arr1[], long long arr2[], int n, int m) 
         { 
             // code here 
-            naiveApproch(arr1, arr2, n, m);
+            // naiveApproch(arr1, arr2, n, m); // giving TLE
+            optimizeApproch(arr1, arr2, n, m);
         } 
 };
 
