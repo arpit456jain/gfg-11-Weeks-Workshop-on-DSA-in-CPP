@@ -16,7 +16,7 @@ class Solution{
     public:
     int optimizeApproch(int arr[],int n)
     {
-        // T.C : O(N) but giving TLE
+        // T.C : O(N)
         // logic is i will take a another array and will store position of 1st occurence at that number
         vector<int> arr2(1000000,0);
         int min=-1;
