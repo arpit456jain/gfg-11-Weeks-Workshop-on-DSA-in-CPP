@@ -47,39 +47,28 @@ public:
     {
         int l = 0;
         int r = n - 1;
-        if (n == 1)
+        while (l <= r)
         {
-            if (arr[0] == k)
-                return 0;
+            int mid = (l + r) / 2;
+            if (arr[mid] == k)
+                return mid;
+
+            else if (k < arr[mid])
+                r = mid - 1;
+
             else
-                return -1;
+                l = mid + 1;
         }
-        else
-        {
-
-            while (l <= r)
-            {
-                int mid = (l + r) / 2;
-                if (arr[mid] == k)
-                    return mid;
-
-                else if (k < arr[mid])
-                    r = mid - 1;
-
-                else
-                    l = mid + 1;
-            }
-            // return binarySearch(arr,l,r,k);
-            return -1;
-        }
+        // return binarySearch(arr,l,r,k);
+        return -1;
     }
     int binarysearch(int arr[], int n, int k)
     {
         int ans;
         ans = binarysearchByLoop(arr, n, k);
-        cout<<"ans by loop "<<ans;
+        cout << "ans by loop " << ans;
         ans = binarysearchByRecursion(arr, n, k);
-        cout<<"ans by recursion "<<ans;
+        cout << "ans by recursion " << ans;
         return ans;
     }
 };
