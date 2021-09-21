@@ -2,3 +2,4 @@
 2. No of Occurence optimised by binary search
 4.Seive of Eratosthnes
 5. 13. Smallest Positive missing number
+6. Search an element in sorted and rotated array in O(log n)
