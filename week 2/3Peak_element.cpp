@@ -28,9 +28,9 @@ using namespace std;
 class Solution
 {
     public:
-    int peakElement(int arr[], int n)
-    {
-      int pos=0;
+	int naiveApproch(int arr[], int n)
+	{
+		int pos=0;
       int maxele = arr[0];
       for(int i=1;i<n;i++)
       {
@@ -40,7 +40,34 @@ class Solution
               pos = i;
           }
       }
-      return pos;
+	  return pos;
+	}
+	int optimizeApproch(int arr[],int low,int high, int n)
+	{
+		int mid = low + (high - low)/2 ;
+	    if ((mid == 0 || arr[mid-1] <= arr[mid]) && (mid == n-1 || arr[mid+1] <= arr[mid]))
+        return mid;
+  
+    // If middle element is not peak and its left neighbour is greater  
+    // than it, then left half must have a peak element 
+    else if (mid > 0 && arr[mid-1] > arr[mid])
+        return optimizeApproch(arr, low, (mid -1), n);
+  
+    // If middle element is not peak and its right neighbour is greater 
+    // than it, then right half must have a peak element 
+    else 
+        return optimizeApproch(arr, (mid + 1), high, n);
+
+	return -1;
+	}
+    int peakElement(int arr[], int n)
+    {
+      int ans;
+	    if(n<=1)
+            return 0;
+	  ans = naiveApproch(arr,n);
+	  ans = optimizeApproch(arr,0,n-1,n);
+      return ans;
     }
 };
 
