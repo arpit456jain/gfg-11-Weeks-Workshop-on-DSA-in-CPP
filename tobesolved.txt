@@ -5,3 +5,4 @@
 6. Search an element in sorted and rotated array in O(log n)
 7. Peak element in O(log n)
 8.Missing and Repeating Number : Hashing
+9.sorting -> heap,radix,counting,bucket
