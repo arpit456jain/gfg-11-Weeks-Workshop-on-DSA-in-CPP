@@ -6,3 +6,4 @@
 7. Peak element in O(log n)
 8.Missing and Repeating Number : Hashing
 9.sorting -> heap,radix,counting,bucket
+10. week 2 Q9,10,11.
