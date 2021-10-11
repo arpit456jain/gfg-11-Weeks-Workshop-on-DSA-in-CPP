@@ -1,6 +1,6 @@
 # 11-Weeks-Workshop-on-DSA-in-CPP
 
-A Comprehensive DSA Workshop Learn Data Structures and Algorithms in-depth in just 11 weeks with this interactive live workshop by geeksforgeek
+A Comprehensive DSA Workshop Learn Data Structures and Algorithms in-depth in just 11 weeks with this interactive live workshop by geeksforgeek.
 
 ## Week 1 
 ### Mathematics
