@@ -7,3 +7,8 @@
 8.Missing and Repeating Number : Hashing
 9.sorting -> heap,radix,counting,bucket
 10. week 2 Q9,10
+
+//Linked list
+1.quick sort and merge sort on list
+2. quciksort on doubly linked list
+3. clone a linked list with next and random pointer
