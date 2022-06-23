@@ -1,16 +1,13 @@
 // { Driver Code Starts
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-/* A binary tree node has data, pointer to left child
-   and a pointer to right child */
 struct Node
 {
     int data;
-    struct Node* left;
-    struct Node* right;
+    struct Node *left;
+    struct Node *right;
 };
-// Utility function to create a new Tree Node
 Node* newNode(int val)
 {
     Node* temp = new Node;
@@ -20,72 +17,6 @@ Node* newNode(int val)
     
     return temp;
 }
-
- // } Driver Code Ends
-/* A binary tree Node
-
-struct Node
-{
-    int data;
-    struct Node* left;
-    struct Node* right;
-    
-    Node(int x){
-        data = x;
-        left = right = NULL;
-    }
-};
- */
-
-
-class Solution
-{
-    public:
-    //Function to return the level order traversal of a tree.
-    vector<int> levelOrder(Node* root)
-    {
-      //Your code here
-       return getLevelOrderTravesel(root);
-    }
-    vector<int> getLevelOrderTravesel(Node *root)
-    {
-        vector<int> v;
-        queue<Node*> q;
-        q.push(root);
-        while(!q.empty())
-        {
-            Node* temp = q.front();
-            q.pop();
-            v.push_back(temp->data);
-            
-            if(temp->left!=NULL)
-            q.push(temp->left);
-            
-            if(temp->right!=NULL)
-            q.push(temp->right);
-        }
-        
-        return v;
-    }
-};
-
-// { Driver Code Starts.
-
-/* Helper function to test mirror(). Given a binary
-   search tree, print out its data elements in
-   increasing sorted order.*/
-void inOrder(struct Node* node)
-{
-  if (node == NULL)
-    return;
-
-  inOrder(node->left);
-  printf("%d ", node->data);
-
-  inOrder(node->right);
-}
-
-// Function to Build Tree
 Node* buildTree(string str)
 {   
     // Corner Case
@@ -148,24 +79,66 @@ Node* buildTree(string str)
     
     return root;
 }
+vector<int> noSibling(Node *root);
 
-/* Driver program to test size function*/
 int main()
 {
-  int t;
-  scanf("%d ",&t);
-  while (t--)
-  {
+    int t;
+    scanf("%d ",&t);
+    while(t--)
+    {
         string s;
-		getline(cin,s);
-		Node* root = buildTree(s);
-		Solution ob;
-        vector <int> res = ob.levelOrder(root);
-        for (int i : res) cout << i << " ";
-        cout << endl;
+        getline(cin,s);
+        Node* root = buildTree(s);
+        
+        vector<int> res = noSibling(root);
+        for (int i = 0; i < res.size(); ++i)
+        {
+            cout<<res[i]<<" ";
+        }
+        cout<<endl;
   }
   return 0;
 }
+// } Driver Code Ends
 
 
-  // } Driver Code Ends
+//User function Template for C++
+
+/* Tree node structure  used in the program
+ struct Node
+ {
+     int data;
+     Node* left, *right;
+}; */
+void Preorder(Node* root,vector<int>& arr)
+    {
+         if(root == NULL)
+            return ;
+        if(root->left == NULL and root->right == NULL)
+        return;
+        
+        if(root->left == NULL or root->right == NULL)
+        {
+            if(root->left!=NULL)
+            arr.push_back(root->left->data);
+            if(root->right!=NULL)
+            arr.push_back(root->right->data);
+        }
+            
+        
+        Preorder(root->left,arr);
+        Preorder(root->right,arr);
+        
+        return;
+    }
+vector<int> noSibling(Node* root)
+{
+    // code here
+      vector<int> arr;
+       Preorder(root,arr);
+       if(arr.size() == 0)
+       arr.push_back(-1);
+       sort(arr.begin(),arr.end());
+        return arr;
+}
